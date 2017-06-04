@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="appThemeNote" parent="AppTheme">
+        <item name="android:colorPrimary">?android:attr/colorActivatedHighlight</item>
+        <item name="android:colorPrimaryDark">?android:attr/colorPressedHighlight</item>
+        <item name="android:colorAccent">@android:color/holo_green_dark</item>
+    </style>
+</resources>
