@@ -1,6 +1,8 @@
 package fvi.at.ua.notepad;
 
 import android.content.Context;
+import android.content.DialogInterface;
+import android.support.v7.app.AlertDialog;
 import android.widget.ArrayAdapter;
 
 import java.io.File;
@@ -104,5 +106,14 @@ public class Utilities {
         }
 
         return null;
+    }
+
+
+    public static void deleteNote(Context context, String fileName) {
+        File dir  = context.getFilesDir();
+        File file  = new File(dir, fileName);
+        if(file.exists()){
+            file.delete();
+        }
     }
 }
